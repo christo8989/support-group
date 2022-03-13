@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Site Image</title>
+
+  <!-- Global-ish Styles -->
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      color: white;
+      background: #88cdf2;
+      border: 5px solid limegreen;
+      margin: 2%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page-margin {
+      margin: 5%;
+    }
+
+    .no-margin-right {
+      margin-right: 0;
+    }
+
+    .nav {
+      font-weight: bold;
+      color: limegreen;
+    }
+
+    .nav ol {
+      list-style-type: none;
+    }
+
+    .nav li {
+      display: inline-block;
+    }
+
+    .nav li:after {
+      color: black;
+      /* https://www.symbolcopy.com/line-symbols.html */
+      content: '│';
+      margin: 0 10px;
+    }
+
+    .nav li:last-child:after {
+      content: none;
+    }
+  </style>
+</head>
+
+
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body -->
+
+<body>
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
+  <!-- (deprecated) https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu -->
+  <style>
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.825em;
+    }
+
+    .nav.nav__header {
+      font-size: 1.75em;
+    }
+  </style>
+  <header class="page-margin">
+    <h1>Learn With Leon &#38 Friends</h1>
+
+    <nav class="nav nav__header">
+      <ol>
+        <li>
+          <a href="about">About Us</a>
+        </li>
+        <li>
+          <a href="portfolio">Portfolio</a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+
+
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p -->
+  <!-- 
+    I didn't know how to wrap text around an image. I google searched "css text around image".
+    https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css
+   -->
+  <style>
+    h2 {
+      font-size: 2.125em;
+    }
+
+    main {
+      font-size: 1em;
+    }
+
+    img {
+      max-height: 425px;
+      max-width: 300px;
+      width: 50%;
+      float: right;
+      margin: 15px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+  <main class="page-margin">
+    <h2>About Us</h2>
+
+    <img class="no-margin-right"
+      src="https://cdn.glitch.global/29374791-40ba-453a-a028-59c5a15b9825/logo.png?v=1646602410193"
+      alt="leon smiling on computer">
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit voluptatem eveniet repudiandae numquam,
+      placeat, maxime eius molestiae recusandae eum optio atque dignissimos delectus at quasi, harum consequuntur
+      voluptates. Itaque ipsam molestias est doloribus maiores fugiat laborum minima odit enim temporibus neque
+      similique quo facilis earum, esse commodi ducimus debitis facere sit dolores quia ad? Veritatis, enim. Nobis,
+      illum assumenda. Odio eum fugiat natus! Ratione eius officia rem amet placeat perspiciatis ex totam sint ad,
+      quam vitae mollitia deserunt reiciendis distinctio quas quae velit cum non soluta. Corporis deleniti accusantium
+      tempora nihil nesciunt placeat, beatae reprehenderit sunt quaerat harum sit! A, quod obcaecati? Inventore
+      cupiditate facilis tenetur quasi enim saepe ab accusantium natus eligendi quod sunt ratione, vitae molestias
+      assumenda fugit iure aliquam pariatur voluptas eius quidem dignissimos quia incidunt! Laudantium temporibus qui
+      molestiae! Ducimus sit exercitationem atque nesciunt, consequatur aliquid. Accusantium quis dolores maiores
+      laboriosam ex, accusamus ipsam fugiat.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt soluta ratione, facere ea ducimus laudantium
+      enim in ex hic vel? Ea maxime est aliquam reprehenderit corporis molestiae magni temporibus nulla quam aliquid
+      dolor deleniti sunt obcaecati, provident nesciunt excepturi vel fugiat beatae modi cumque accusamus in
+      asperiores vitae? Doloremque iure inventore corporis. Magni, eius earum quibusdam aliquid id unde explicabo
+      ipsam optio quo cumque amet, itaque reprehenderit eveniet ratione dicta consequuntur delectus? Nemo officiis
+      commodi, autem consequuntur asperiores unde, eveniet a natus quibusdam dicta tempora velit alias ab consectetur
+      excepturi itaque laboriosam at assumenda vel iste. Placeat deleniti accusantium quisquam.
+    </p>
+  </main>
+
+
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer -->
+  <style>
+    footer {
+      clear: both;
+      margin-bottom: 0;
+    }
+
+    .nav.nav__footer {
+      font-size: 1em;
+      text-align: center;
+    }
+  </style>
+  <footer class="page-margin">
+    <nav class="nav nav__footer">
+      <ol>
+        <li>
+          <a href="http://www.twitch.com">Twitch</a>
+        </li>
+
+        <li>
+          <a href="http://www.twitter.com">Twitter</a>
+        </li>
+
+        <li>
+          <a href="http://www.youtube.com">Youtube</a>
+        </li>
+      </ol>
+    </nav>
+  </footer>
+</body>
+
+</html>
